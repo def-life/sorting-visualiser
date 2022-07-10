@@ -15,7 +15,6 @@ export default function Visualiser() {
   function createArray() {
     const width = window.innerWidth;
     const temp = [];
-    console.log((width - 0.2 * width) / 5 - 5);
 
     // due to inaccuracy of innerWidth 4 to 5 element might overflow so therefore is subtract 5
     for (let i = 0; i < (width - 0.2 * width) / 5 - 5; i++) {
@@ -68,7 +67,6 @@ export default function Visualiser() {
         }
 
         if (i === animations.length - 1) {
-          console.log(array);
           setArray([...array]);
         }
       }, i * DELAY);
@@ -85,7 +83,6 @@ export default function Visualiser() {
     const bars = document.querySelectorAll(".bar");
 
     setTimeout(() => {
-      console.log("set time out called");
       enable_btn();
     }, DELAY * animations.length);
 
@@ -104,7 +101,6 @@ export default function Visualiser() {
         }
 
         if (i === animations.length - 1) {
-          console.log(array);
           setArray([...array]);
         }
       }, i * DELAY);
@@ -117,7 +113,6 @@ export default function Visualiser() {
     // disable buttons
     disable_btn();
     const animations = quickSort(array);
-    console.log(array);
 
     const bars = document.querySelectorAll(".bar");
 
@@ -144,7 +139,6 @@ export default function Visualiser() {
         }
 
         if (i === animations.length - 1) {
-          console.log(array);
           setArray([...array]);
         }
       }, i * DELAY);
