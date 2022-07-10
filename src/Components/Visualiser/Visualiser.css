@@ -1,0 +1,57 @@
+.visualiser {
+    margin: 0 auto;
+    width: 80%;
+    text-align: center;
+}
+
+.bar {
+    width: 3px;
+    margin: 1px;
+    background: orange;
+    display: inline-block;
+}
+
+button {
+    padding: 1em 1.6em;
+    color: white;
+    border: none;
+    margin-left: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin-bottom: 1em;
+}
+
+.buttons {
+    margin-top: 3em;
+    text-align: center;
+    position: relative;
+}
+
+.first_btn {
+    background-color: green;
+}
+
+.second_btn {
+    background-color: orange;
+}
+
+.third_btn {
+    background-color: brown;
+}
+
+.fourth_btn {
+    background-color: purple;
+}
+
+.buttons.overlay::after {
+    content: "";
+    background-color: rgba(255, 255, 255, 0.4);
+    position: absolute;
+    z-index: 10;
+    display: block;
+    top: 0;
+    right:0;
+    bottom: 0;
+    left: 0;
+}
